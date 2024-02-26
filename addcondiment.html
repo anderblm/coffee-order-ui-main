@@ -49,7 +49,6 @@
                 </tr>
             </thead>
             <tbody id="orderTableBody">
-                <!-- Order details will be displayed here -->
             </tbody>
         </table>
     </div>
@@ -64,12 +63,9 @@
     <a href="orderconformation.html"><button>Confirm Your Order</button></a>
 
     <script>
-        // Function to add a condiment to the order
         function addCondiment(condiment) {
             const tableBody = document.getElementById('orderTableBody');
             const beverage = sessionStorage.getItem('selectedBeverage');
-
-            // Create a new row for the condiment
             const newRow = document.createElement('tr');
             newRow.innerHTML = `
                 <td>${beverage}</td>
